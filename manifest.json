@@ -1,0 +1,17 @@
+{
+    "name": "AmazonSmile Extension",
+    "version": "1.0",
+    "description": "Automatically reroute amazon.com to smile.amazon.com",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+            "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "webNavigation"
+    ]
+  }
